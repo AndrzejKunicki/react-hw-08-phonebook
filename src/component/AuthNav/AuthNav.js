@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 const styles = {
   link: {
     display: 'inline-block',
+
     textDecoration: 'none',
     padding: 12,
     fontWeight: 700,
@@ -22,7 +23,7 @@ const AuthNav = () => (
       style={styles.link}
       activeStyle={styles.activeLink}
     >
-      Регистрация
+      Register
     </NavLink>
     <NavLink
       to="/login"
@@ -30,7 +31,7 @@ const AuthNav = () => (
       style={styles.link}
       activeStyle={styles.activeLink}
     >
-      Логин
+      Login
     </NavLink>
   </div>
 );

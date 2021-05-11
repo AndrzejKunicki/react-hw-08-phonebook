@@ -8,6 +8,7 @@ const styles = {
   container: {
     display: 'flex',
     alignItems: 'center',
+    marginRight: '15px',
   },
   avatar: {
     marginRight: 4,
@@ -21,7 +22,6 @@ const styles = {
 const UserMenu = ({ avatar, name, onLogout }) => (
   <div style={styles.container}>
     <Avatar alt="Remy Sharp" src={avatar} alt="avatar" width="32" />
-    {/* <img src={avatar} alt="" width="32" style={styles.avatar} /> */}
     <span style={styles.name}>Welcome, {name}</span>
     <button type="button" onClick={onLogout}>
       Logout

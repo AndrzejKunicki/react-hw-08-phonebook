@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import Container from '../component/Container';
 import ContactForm from '../component/ContactForm';
 import Filter from '../component/Filter';
@@ -12,10 +11,6 @@ const barStyles = {
 };
 
 class ContactsView extends Component {
-  // componentDidMount() {
-  //   this.props.fetchTodos();
-  // }
-
   render() {
     return (
       <Container>
@@ -29,12 +24,4 @@ class ContactsView extends Component {
   }
 }
 
-// const mapStateToProps = state => ({
-//   isLoadingTodos: todosSelectors.getLoading(state),
-// });
-
-// const mapDispatchToProps = {
-//   fetchTodos: todosOperations.fetchTodos,
-// };
-
-export default connect(null, null)(ContactsView);
+export default ContactsView;
